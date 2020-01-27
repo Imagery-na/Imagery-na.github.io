@@ -1,19 +1,24 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-color: #20202D;
-    margin: 0;
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 .container{
+    width: 90%;
     max-width: 945px;
     margin: auto;
 }
+img{
+    max-width: 100%;
+}
 .hero{
     padding-top: 50px;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(0deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
 }
 .hero-header{
@@ -21,16 +26,13 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 85px;
+    width: 90%;
 }
 .social-link:first-child{
     margin-left: 0;
 }
 .social-link{
     margin-left: 20px;
-}
-.social-img{
-    width: 10px;
-    height: 10px;
 }
 .hero-content{
     display: flex;
@@ -83,6 +85,7 @@ body{
 }
 section, .section{
     min-height: 100vh;
+    height: auto;
     padding: 4vh 0;
 }
 /* features */
@@ -120,8 +123,7 @@ section, .section{
     justify-content: space-between;
 }
 .project-image{
-    width: 400px;
-    height: 250px;
+    width: 450px;
     border-radius: 5px;
 }
 .project-text{
@@ -131,11 +133,7 @@ section, .section{
     flex-direction: column;
 }
 .project-title{
-    margin: 0;
     margin-bottom: 45px;
-}
-.project-subtitle{
-    margin: 0;
 }
 .project-info{
     font-size: 16px;
@@ -229,7 +227,6 @@ section, .section{
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    margin: 0;
     margin-bottom: 15px;
 }
 .contacts-link{
@@ -248,5 +245,130 @@ section, .section{
     color: #A5A5A5;
     margin-top: 72px;
 }
-
+/* responsive */
+@media (max-width: 1100px){
+    .hero-avatar{
+        width: 300px;
+        height: 300px;
+        border-width: 10px;
+    }
+    .project-text{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 836px){
+    .hero-content{
+        flex-direction: column;
+    }
+    .hero-avatar{
+        order: 0;
+        width: 300px;
+        height: 300px;
+        border-width: 10px;
+        margin-bottom: 17px;
+    }
+    .hero-text{
+        order: 1;
+        text-align: center;
+    }
+    .features-item{
+        flex-basis: 45%;
+    }
+    .project-slide{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-image{
+        margin-bottom: 40px;
+    }
+    .contacts-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts-form{
+        margin-bottom: 58px;
+    }
+}
+@media (max-width: 564px){
+    section, .section{
+        min-height: 60vh;
+        height: auto;
+        padding: 4vh 0;
+    }
+    .hero-avatar{
+        width: 145px;
+        height: 145px;
+        border-width: 4px;
+        background-size: 140%;
+        background-position: center top;
+    }
+    .hero-header{
+        margin-bottom: 38px;
+    }
+    .social-link{
+        margin-left: 5px;
+    }
+    .hero-title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .hero-subtitle{
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom: 7px;
+    }
+    .hero-description{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .button{
+        padding: 20px 30px;
+    }
+    .section-title{
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .features-item{
+        flex-basis: 100%;
+    }
+    .features-title{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .features-text{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .project-image {
+        margin-bottom: 30px;
+    }
+    .project-text {
+        margin-left: 0px;
+    }
+    .project-title {
+        margin-bottom: 25px;
+    }
+    .contacts-form{
+        padding: 40px 19px;
+    }
+    .form-title{
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .form-button{
+        font-size: 11px;
+    }
+    .contacts-mail, .contacts-phone{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .contacts-title{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .contacts-link{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
 
