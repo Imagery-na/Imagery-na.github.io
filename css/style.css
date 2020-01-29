@@ -28,6 +28,22 @@ img{
     margin-bottom: 85px;
     width: 90%;
 }
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 20px;
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+.social-links img{
+    width: 25px;
+    height: 25px;
+}
 .social-link:first-child{
     margin-left: 0;
 }
@@ -74,6 +90,11 @@ img{
 .button:hover{
     text-decoration: underline;
 }
+button:active, button:focus{
+    border: none;
+    outline: 0;
+    outline-offset: 0;
+}
 .hero-avatar{
     height: 360px;
     width: 360px;
@@ -105,7 +126,7 @@ section, .section{
 }
 .features-item{
     width: 30%;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 .features-title{
     font-weight: bold;
@@ -122,6 +143,9 @@ section, .section{
     display: flex;
     justify-content: space-between;
 }
+.project-slide a{
+    cursor: pointer;
+}
 .project-image{
     width: 450px;
     border-radius: 5px;
@@ -136,8 +160,13 @@ section, .section{
     margin-bottom: 45px;
 }
 .project-info{
+    margin-top: 15px;
     font-size: 16px;
     line-height: 24px;
+}
+.project-link{
+    color: #FFBB01;
+    margin-top: 10px;
 }
 .projects-pagination{
     display: flex;
@@ -214,7 +243,6 @@ section, .section{
 .contacts-data{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 42px;
 }
 .contacts-phone, .contacts-mail{
     flex-basis: 50%;
@@ -294,6 +322,19 @@ section, .section{
         min-height: 60vh;
         height: auto;
         padding: 4vh 0;
+    }
+    .logo{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .logo img{
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .social-links img{
+        width: 20px;
+        height: 20px;
     }
     .hero-avatar{
         width: 145px;

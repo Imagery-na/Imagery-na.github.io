@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Марина Петрова frontend developer</title>
+    <link rel="SHORTCUT ICON" href="img\favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css\animate.css">
@@ -14,12 +15,15 @@
     <header class="hero">
         <div class="container">
             <div class="hero-header">
-                <img src="img\logo.svg" alt="Imagery-na" class="logo">
+                <div class="logo">
+                    <img src="img\image.png" alt="Imagery-na">
+                    Imagery-na
+                </div>
                 <div class="social-links">
-                    <a href="https://github.com/Imagery-na" class="social-link"target="_blank"><img src="img\social\github.svg" alt="ГитХаб"></a>
-                    <a href="https://github.com/Imagery-na" class="social-link"target="_blank"><img src="img\social\twitter.svg" alt="Твиттер"></a>
-                    <a href="https://instagram.com/Imagery_na" class="social-link"target="_blank"><img src="img\social\instagram.svg" alt="Инстаграм"></a>
-                    <a href="https://github.com/Imagery-na" class="social-link"target="_blank"><img src="img\social\facebook.svg" alt="Потом будет вк!!!"></a>
+                    <a href="https://instagram.com/Imagery_na" class="social-link"target="_blank"><img class="min" src="img\social\inst.png" alt="Инстаграм"></a>
+                    <a href="https://vk.me/dreamarina" class="social-link"target="_blank"><img src="img\social\vk2.png" alt="Вконтакте"></a>
+                    <a href="https://wa.me/79098419597" class="social-link"target="_blank"><img src="img\social\wh.png" alt="Whatsapp"></a>
+                    <a href="https://github.com/Imagery-na" class="social-link"target="_blank"><img src="img\social\github2.png" alt="GitHub"></a>
                 </div>
             </div>
             <!-- /.hero-header Логотип, картинки соцсетей-->
@@ -27,8 +31,8 @@
                 <div class="hero-text">
                     <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">Frontend Developer</span>
                     <h1 class="hero-title wow fadeInRight" data-wow-delay="0.4s">Марина Петрова</h1>
-                    <p class="hero-description wow fadeInRight" data-wow-delay="0.6s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать вёрстку сайта или интернет-магазина</p>
-                    <button class="button hero-button wow fadeInRight" data-wow-delay="0.8s">Написать мне</button>
+                    <p class="hero-description wow fadeInRight" data-wow-delay="0.6s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать вёрстку landing page или интернет-магазина</p>
+                    <a href="mailto:marina-l-p@mail.ru" target="_blank"><button class="button hero-button wow fadeInRight" data-wow-delay="0.8s">Написать мне</button></a>
                 </div>
                 <div class="hero-avatar wow fadeIn" data-wow-delay="1.5s"></div>
             </div>
@@ -84,12 +88,13 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="project-slide">
-                                <img src="img\FashionLook.png" alt="Интернет-магазин одежды FashionLook" class="project-image">
+                                <a href="https://fashionlook-shop.github.io/" target="_blank"><img src="img\FashionLook.png" alt="Интернет-магазин одежды FashionLook" class="project-image"></a>
                                 <div class="project-text">
                                     <h3 class="project-title">Интернет-магазин одежды FashionLook</h3>
                                     <h4 class="project-subtitle">Информация о проекте</h4>
                                     <p class="project-info">Вёрстка сайта интернет-магазина одежды, в котором организована
                                             работа с корзиной, добавление, удаление и подсчёт стоимости товаров</p>
+                                    <a href="https://fashionlook-shop.github.io/" target="_blank" class="project-link">Перейти</a>        
                                 </div>
                             </div>
                         </div>
@@ -107,13 +112,15 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="project-slide">
-                                <img src="img\Ozon.png" alt="Интернет-магазин одежды FashionLook" class="project-image">
+                                <a href="https://training-site.github.io/" target="_blank"><img src="img\Ozon.png" alt="Интернет-магазин одежды FashionLook" class="project-image"></a>
                                 <div class="project-text">
-                                    <h3 class="project-title">Интернет-магазин техники Ozon</h3>
+                                    <h3 class="project-title">Интернет-магазин техники O-zone</h3>
                                     <h4 class="project-subtitle">Информация о проекте</h4>
-                                    <p class="project-info">Интернет-магазин техники с реализацией поиска товаров, работы с корзиной,
-                                        сортировки товаров по цене и акциям. Организована загрузка данных при помощи json-сервера
+                                    <p class="project-info">Интернет-магазин техники с загрузкой данных при помощи json-сервера. Реализованы возможности поиска товаров, работы с корзиной,
+                                        сортировки товаров по цене и акциям.  
+                                        (По ссылке доступна light-версия без работы с сервером)
                                     </p>
+                                    <a href="https://training-site.github.io/" target="_blank" class="project-link">Перейти</a>      
                                 </div>
                             </div>
                         </div>
@@ -147,15 +154,13 @@
                         </div>                           
                         <div class="contacts-social">
                             <h4 class="contacts-title">Соцсети</h4>
-                            <a href="https://t-do.ru.me/imageryna" class="contacts-link" target="_blank">t.me/imageryna</a>
-                            <a href="https://vk.me/dreamarina" class="contacts-link" target="_blank">vk.me/dreamarina</a>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/Imagery-na" class="social-link"target="_blank"><img src="img\social\github.svg" alt="ГитХаб"></a>
-                        <a href="https://github.com/Imagery-na" class="social-link"target="_blank"><img src="img\social\twitter.svg" alt="Твиттер"></a>
-                        <a href="https://instagram.com/Imagery_na" class="social-link"target="_blank"><img src="img\social\instagram.svg" alt="Инстаграм"></a>
-                        <a href="https://github.com/Imagery-na" class="social-link"target="_blank"><img src="img\social\facebook.svg" alt="Потом будет вк!!!"></a>
+                        <a href="https://instagram.com/Imagery_na" class="social-link"target="_blank"><img class="min" src="img\social\inst.png" alt="Инстаграм"></a>
+                        <a href="https://vk.me/dreamarina" class="social-link"target="_blank"><img src="img\social\vk2.png" alt="Вконтакте"></a>
+                        <a href="https://wa.me/79098419597" class="social-link"target="_blank"><img src="img\social\wh.png" alt="Whatsapp"></a>
+                        <a href="https://github.com/Imagery-na" class="social-link"target="_blank"><img src="img\social\github2.png" alt="GitHub"></a>
                     </div>
                     <a href="#" class="contacts-policy">Политика конфиденциальности</a>
                 </div>
