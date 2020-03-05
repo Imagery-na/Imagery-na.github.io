@@ -252,45 +252,84 @@ function Clients(){
     const number4 = document.getElementById('client4').querySelector('.clients__number');
     const btnLeft = document.querySelector('.clients__btn-left');
     const btnRight = document.querySelector('.clients__btn-right');
-    
-    btnRight.addEventListener('click', () => {
-        if(number1.classList.contains('clients__choosen-number')){
-            number1.classList.remove("clients__choosen-number");
-            number2.classList.add("clients__choosen-number");
-        }
-        else if(number2.classList.contains('clients__choosen-number')){
-            number2.classList.remove("clients__choosen-number");
-            number3.classList.add("clients__choosen-number");
-        }
-        else if(number3.classList.contains('clients__choosen-number')){
-            number3.classList.remove("clients__choosen-number");
-            number4.classList.add("clients__choosen-number");
-        }
-        else{
-            number4.classList.remove("clients__choosen-number");
-            number1.classList.add("clients__choosen-number");
-        }
-    });
-    btnLeft.addEventListener('click', () => {
-        if(number1.classList.contains('clients__choosen-number')){
-            number1.classList.remove("clients__choosen-number");
-            number4.classList.add("clients__choosen-number");
-        }
-        else if(number4.classList.contains('clients__choosen-number')){
-            number4.classList.remove("clients__choosen-number");
-            number3.classList.add("clients__choosen-number");
-        }
-        else if(number3.classList.contains('clients__choosen-number')){
-            number3.classList.remove("clients__choosen-number");
-            number2.classList.add("clients__choosen-number");
-        }
-        else{
-            number2.classList.remove("clients__choosen-number");
-            number1.classList.add("clients__choosen-number");
-        }
-    });
+    if(document.documentElement.clientWidth> 1024){
+        btnRight.addEventListener('click', () => {
+            if(number1.classList.contains('clients__choosen-number')){
+                number1.classList.remove("clients__choosen-number");
+                number2.classList.add("clients__choosen-number");
+            }
+            else if(number2.classList.contains('clients__choosen-number')){
+                number2.classList.remove("clients__choosen-number");
+                number3.classList.add("clients__choosen-number");
+            }
+            else if(number3.classList.contains('clients__choosen-number')){
+                number3.classList.remove("clients__choosen-number");
+                number4.classList.add("clients__choosen-number");
+            }
+            else{
+                number4.classList.remove("clients__choosen-number");
+                number1.classList.add("clients__choosen-number");
+            }
+        });
+        btnLeft.addEventListener('click', () => {
+            if(number1.classList.contains('clients__choosen-number')){
+                number1.classList.remove("clients__choosen-number");
+                number4.classList.add("clients__choosen-number");
+            }
+            else if(number4.classList.contains('clients__choosen-number')){
+                number4.classList.remove("clients__choosen-number");
+                number3.classList.add("clients__choosen-number");
+            }
+            else if(number3.classList.contains('clients__choosen-number')){
+                number3.classList.remove("clients__choosen-number");
+                number2.classList.add("clients__choosen-number");
+            }
+            else{
+                number2.classList.remove("clients__choosen-number");
+                number1.classList.add("clients__choosen-number");
+            }
+        });  
+    }
+    else {
+        const logo = document.querySelector('.clients__logo');
+        btnRight.addEventListener('click', () => {
+            if(logo.classList.contains('clients__logo1')){
+                logo.classList.add("clients__logo2");
+                logo.classList.remove("clients__logo1");
+            }
+            else if(logo.classList.contains('clients__logo2')){
+                logo.classList.add("clients__logo3");
+                logo.classList.remove("clients__logo2");
+            }
+            else if(logo.classList.contains('clients__logo3')){
+                logo.classList.add("clients__logo4");
+                logo.classList.remove("clients__logo3");
+            }
+            else{
+                logo.classList.add("clients__logo1");
+                logo.classList.remove("clients__logo4");
+            }
+        });
+        btnLeft.addEventListener('click', () => {
+            if(logo.classList.contains('clients__logo1')){
+                logo.classList.add("clients__logo4");
+                logo.classList.remove("clients__logo1");
+            }
+            else if(logo.classList.contains('clients__logo4')){
+                logo.classList.add("clients__logo3");
+                logo.classList.remove("clients__logo4");
+            }
+            else if(logo.classList.contains('clients__logo3')){
+                logo.classList.add("clients__logo2");
+                logo.classList.remove("clients__logo3");
+            }
+            else{
+                logo.classList.add("clients__logo1");
+                logo.classList.remove("clients__logo2");
+            }
+        });
+    }
 }
-
 Project();
 Features();
 Clients();

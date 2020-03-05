@@ -404,6 +404,18 @@ main{
     background-image: url(../img/1.png);
     background-size: cover;
 }
+.clients__logo1{
+    background-image: url(../img/1.png);
+}
+.clients__logo2{
+    background-image: url(../img/2.png);
+}
+.clients__logo3{
+    background-image: url(../img/3.png);
+}
+.clients__logo4{
+    background-image: url(../img/4.png);
+}
 .clients__buttons{
     display: flex;
     justify-content: space-between;
