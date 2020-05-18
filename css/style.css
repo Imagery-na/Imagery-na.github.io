@@ -193,30 +193,30 @@ section, .section{
     justify-content: space-between;
     width: 100%;
 }
-.contacts-form{
-    max-width: 380px;
+.info{
+    max-width: 450px;
     background: #FFFFFF;
     box-shadow: -5px 5px 0px #FFC41D;
     border-radius: 5px;
-    padding: 30px 45px;
+    padding: 20px 30px;
 }
-.form-title{
+.info-title{
     font-weight: bold;
     font-size: 18px;
     line-height: 28px;
     text-align: center;
     color: #000;
     margin:0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-.form-p{
+.info-p{
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
     color: #000;
     margin:0;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .input{
     background: #F8F8F8;
