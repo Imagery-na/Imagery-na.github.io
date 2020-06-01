@@ -12,7 +12,7 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    padding: 0 10px;
+    padding: 0 5vw;
     background: #202020;
 }
 .header__logo{
@@ -22,9 +22,10 @@ header{
 }
 .header__burger{
     border-radius: 50%;
-    background: #292929;
-    background: url(../img/burger.png);
-    background-size: 77%;
+    background-color: #292929;
+    background-image: url(../img/Desktop/btnPhone.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
     background-position: center;
     width: 35px;
     height: 35px;
